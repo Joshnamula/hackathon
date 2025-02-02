@@ -1,0 +1,78 @@
+/* General Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+/* Ensures the form content expands while keeping the button fixed */
+.form-content {
+  flex-grow: 1;
+  overflow-y: auto; /* Allows scrolling within the form */
+  margin-bottom: 10px; /* Space for the submit button */
+}
+
+/* Form group for each input */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Textarea styling */
+.feedback-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Radio button group */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for the submit button, keeping it at the bottom */
+.submit-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  background: white;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Ensure it looks good on smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+      padding: 10px;
+  }
+}

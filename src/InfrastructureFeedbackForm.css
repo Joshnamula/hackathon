@@ -1,0 +1,62 @@
+/* General Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensures the form takes up the full screen height */
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding in height calculation */
+}
+
+.form-content {
+  overflow-y: auto; /* Enables scrolling if content overflows */
+  flex-grow: 1; /* Ensures content takes the available space */
+  margin-bottom: 20px; /* Space for submit button */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fff; /* Match the background */
+}
+
+.submit-button {
+  background-color: #4c81af;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #3b6b8e; /* Change the hover color */
+}

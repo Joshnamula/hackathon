@@ -1,0 +1,58 @@
+/* Header Styling */
+header {
+    background-color: #b13b3b; /* Dark blue shade */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .header-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 100px; 
+  }
+  
+  header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-left: 10px;
+  }
+  .login img {
+    height: 75px; 
+    color: aliceblue;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  
+  header p {
+    font-size: 0.9rem;
+    margin: 2px 0;
+  }
+  
+  header a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header a:hover {
+    color: #e67e22; /* Orange hover effect */
+  }
+  
+  header .space-x-4 > a {
+    margin-left: 10px;
+  }
+  

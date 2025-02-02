@@ -1,0 +1,95 @@
+/* Container Styling */
+.home-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grid Layout: 3 Cards per Row */
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 cards in a row */
+    gap: 35px; /* Space between category cards */
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Category Card */
+  .category-card {
+    width: 350px; /* Increase width */
+    height: 200px; /* Reduce height */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Section */
+  .card-image {
+    height: 65%; /* Image takes major part */
+    background-size: cover;
+    background-position: left;
+  }
+  
+  /* Text Section */
+  .card-text {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: rgb(33, 8, 8);
+    text-align: center;
+  }
+  
+  .card-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card-text p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  /* Hover Effect */
+  /* .category-card:hover .card-text {
+    background-color: rgba(78, 76, 116, 0.9);
+  } */
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .category-card {
+      width: 350px; /* Slightly smaller for medium screens */
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr); /* Show 2 per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .categories-grid {
+      grid-template-columns: 1fr; /* Show 1 per row on small screens */
+    }
+  
+    .category-card {
+      width: 100%; /* Full width for mobile */
+    }
+  }
+  

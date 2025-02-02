@@ -1,0 +1,33 @@
+/* General Form Styling */
+.form-container {
+  height: 100vh; /* Form height fits the full screen */
+  overflow-y: auto; /* Allows scrolling if content exceeds the screen height */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't exceed the viewport */
+}
+
+.form-content {
+  flex-grow: 1; /* Ensures the content section takes up the remaining space */
+  margin-bottom: 60px; /* Space for the submit button */
+}
+
+.submit-button {
+  position: sticky; /* Stick the button at the bottom of the form */
+  bottom: 0;
+  align-self: center;
+  margin-top: 20px; /* Spacing between content and button */
+  background-color: #4c81af;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3b6b8e; /* Hover effect */
+}

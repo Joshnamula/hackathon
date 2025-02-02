@@ -1,0 +1,95 @@
+/* Page background styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.form-container {
+  background: rgb(206, 243, 242);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 500px;
+}
+
+.academic-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  color: #d9534f;
+  margin-bottom: 30px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.form-textarea {
+  height: 80px;
+  resize: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.submit-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-button {
+  background: #d9534f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+  background: #c9302c;
+}
